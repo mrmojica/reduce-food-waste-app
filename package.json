@@ -1,0 +1,43 @@
+{
+  "name": "reduce-food-waste-app",
+  "version": "1.0.0",
+  "description": "\"An app that helps people keep track whole food items to prevent food wastage\"",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bayareawebdevs/reduce-food-waste-app.git"
+  },
+  "author": "\"taypsl and riceball1\"",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bayareawebdevs/reduce-food-waste-app/issues"
+  },
+  "homepage": "https://github.com/bayareawebdevs/reduce-food-waste-app#readme",
+  "dependencies": {
+    "bcryptjs": "*",
+    "body-parser": "*",
+    "connect-flash": "*",
+    "cookie-parser": "^1.4.1",
+    "dotenv": "^4.0.0",
+    "express": "*",
+    "express-handlebars": "*",
+    "express-messages": "*",
+    "express-session": "*",
+    "express-validator": "*",
+    "mongodb": "*",
+    "mongoose": "*",
+    "morgan": "^1.7.0",
+    "passport": "*",
+    "passport-http": "*",
+    "passport-local": "*"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-http": "^3.0.0",
+    "faker": "^3.1.0",
+    "mocha": "^3.2.0"
+  }
+}
