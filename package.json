@@ -4,7 +4,8 @@
   "description": "\"An app that helps people keep track whole food items to prevent food wastage\"",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js",
+    "test": "mocha test"
   },
   "repository": {
     "type": "git",
