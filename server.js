@@ -5,7 +5,9 @@ const passport = require('passport');
 const morgan = require('morgan');
 const mongo = require('mongodb');
 const mongoose = require('mongoose');
-const index = require('./routes/index.js');
+const user = require('./routes/user.js');
+const api = require('./routes/api.js');
+
 
 const app = express();
 
@@ -21,7 +23,8 @@ app.use('/public', express.static('public'));
 
 
 // routes
-app.use('/', index);
+app.use('/', user);
+app.use('/api', api)
 app.use('*', function(req, res) {
   return res.status(404).json({message: 'Not Found'});
 });
