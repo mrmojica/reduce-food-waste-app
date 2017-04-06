@@ -10,3 +10,8 @@ Node/Express, React/Redux, MongoDB
 - Data visualization with Chart.js
 
 
+## Locally Running App
+- `git clone`
+- `npm install`
+- `npm run dev` && `npm start`
+- checkout localhost:3000
