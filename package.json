@@ -1,25 +1,30 @@
 {
   "name": "reduce-food-waste-app",
   "version": "1.0.0",
-  "description": "\"An app that helps people keep track whole food items to prevent food wastage\"",
+  "description": "\"An app to prevent food wastage\"",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
+    "start": "nodemon server.js",
+    "server": "webpack-dev-server",
+    "build": "webpack",
+    "dev": "webpack -d --watch",
+    "prod": "webpack -p",
     "test": "mocha test"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bayareawebdevs/reduce-food-waste-app.git"
   },
-  "author": "\"taypsl and riceball1\"",
+  "author": "\"bayareawebdevs\"",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/bayareawebdevs/reduce-food-waste-app/issues"
   },
   "homepage": "https://github.com/bayareawebdevs/reduce-food-waste-app#readme",
   "dependencies": {
+    "babel-polyfill": "^6.23.0",
     "bcryptjs": "*",
-    "body-parser": "*",
+    "body-parser": "^1.17.1",
     "connect-flash": "*",
     "cookie-parser": "^1.4.1",
     "dotenv": "^4.0.0",
@@ -28,9 +33,10 @@
     "express-messages": "*",
     "express-session": "*",
     "express-validator": "*",
-    "mongodb": "*",
-    "mongoose": "*",
-    "morgan": "^1.7.0",
+    "isomorphic-fetch": "^2.2.1",
+    "mongodb": "^2.2.25",
+    "mongoose": "^4.9.3",
+    "morgan": "^1.8.1",
     "passport": "*",
     "passport-http": "*",
     "passport-local": "*",
@@ -42,9 +48,18 @@
     "redux-thunk": "^2.2.0"
   },
   "devDependencies": {
+    "babel-core": "^6.24.0",
+    "babel-loader": "^6.4.1",
+    "babel-preset-es2015": "^6.24.0",
+    "babel-preset-react": "^6.23.0",
     "chai": "^3.5.0",
     "chai-http": "^3.0.0",
     "faker": "^3.1.0",
-    "mocha": "^3.2.0"
+    "mocha": "^3.2.0",
+    "node-sass": "^4.5.2",
+    "sass-loader": "^6.0.3",
+    "style-loader": "^0.16.1",
+    "webpack": "^2.3.3",
+    "webpack-dev-server": "^2.4.2"
   }
 }

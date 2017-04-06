@@ -3,7 +3,6 @@ An app that tracks your food waste and helps you to eliminate it, also provides 
 
 Node/Express, React/Redux, MongoDB
 
-
 ## Features
 - Tracks fridge items
 - Google calendar API

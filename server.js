@@ -1,3 +1,5 @@
+require('babel-polyfill');
+
 const express = require('express');
 const bodyParser = require('body-parser');
 const expressValidator = require('express-validator');
@@ -5,11 +7,11 @@ const passport = require('passport');
 const morgan = require('morgan');
 const mongo = require('mongodb');
 const mongoose = require('mongoose');
-const user = require('./routes/user.js');
-const api = require('./routes/api.js');
+const user = require('./server/routes/user.js');
+const api = require('./server/routes/api.js');
 
 
-const app = express();
+const app = module.exports = express();
 
 
 app.use(bodyParser.json());
@@ -31,11 +33,11 @@ app.use('*', function(req, res) {
 
 
 // set up server
-app.set('port', process.env.PORT || 3000);
+// app.set('port', process.env.PORT || 3000);
 
-const server = app.listen(app.get('port'), () => {
-	console.log(`Server listening on port ${server.address().port}`);
-})
+// const server = app.listen(app.get('port'), () => {
+// 	console.log(`Server listening on port ${server.address().port}`);
+// })
 
 
 // /* Server Function */
@@ -79,3 +81,5 @@ const server = app.listen(app.get('port'), () => {
 // };
 
 // module.exports = {app, runServer, closeServer};
+
+app.listen(3000, () => { console.log('Listening on Port 3000')});

@@ -1,9 +1,11 @@
+require('babel-polyfill');
+
 const express = require('express');
 const router = express.Router();
-
+const path = require('path');
 
 router.get('/', (req, res) => {
-	res.send('Hello World')
+	res.sendFile(path.resolve('public', 'index.html'))
 });
 
 
