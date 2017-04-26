@@ -1,5 +1,5 @@
-# reduce-food-waste-app
-An app that tracks your food waste and helps you to eliminate it, also provides information on how to store food to keep them fresh longer.
+# Reduce Food Waste App
+This is an app that tracks your food waste and helps you to eliminate it, also provides information on how to store food to keep them fresh longer.
 
 ## Open Source Collaborative Work
 - Fork the repo and work on your own branch for the feature you are adding
@@ -7,8 +7,10 @@ An app that tracks your food waste and helps you to eliminate it, also provides 
 - ```git merge``` any changes and fix any conflicts
 - ```git commit``` small commits (avoid doing too many large changes)
 
-
-Node/Express, React/Redux, MongoDB
+## Technologies
+- Node/Express
+- React/Redux
+- MongoDB
 
 ## Features
 - Tracks fridge items
