@@ -1,0 +1,14 @@
+.login-container {
+	margin: 250px 0 auto;
+}
+
+.login-wrapper, .form-container, .createAccount-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.login-input, .login-button {
+	width: 150px;
+}
